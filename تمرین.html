@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fontcdn.ir/Font/BYekan.css" rel="stylesheet">
+    <title>فرم نمونه</title>
+    <style>
+      body {
+        background-color: #f2f2f2; 
+        color: #5bc0de; 
+        margin: 0;
+        height: 100vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center; /
+      }
+
+      .form-container {
+        background-color: #1f3b4d; 
+        padding: 20px;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(91, 192, 222, 0.5); 
+        width: 300px; 
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 10px;
+      }
+
+      input[type="text"] {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #5bc0de; 
+        border-radius: 5px;
+        background-color: #fff; 
+        color: #000; 
+      }
+
+      .radio-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .radio-group label {
+        margin-left: 10px;
+      }
+
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      input[type="submit"] {
+        padding: 10px;
+        background-color: #2ecc71; 
+        color: white; 
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #27ae60; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="/action_page.php" method="get">
+        <label for="نام"> نام </label>
+        <input type="text" id="نام" name="نام" autofocus required>
+
+        <label for="نام خانوادگی"> نام خانوادگی </label>
+        <input type="text" id="نام خانوادگی" name="نام خانوادگی" required>
+
+        <label>انتخاب زبان</label>
+        <div class="radio-group">
+          <input type="radio" id="زبان" name="انتخاب زبان" value="زبان"
+            required>
+          <label for="زبان">فارسی</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" id="زبان2" name="انتخاب زبان" value="زبان2"
+            required>
+          <label for="زبان2">English</label>
+        </div>
+
+        <label>جنسیت</label>
+        <div class="radio-group">
+          <input type="radio" id="جنسیت" name="جنسیت" value="جنسیت" required>
+          <label for="جنسیت">مرد</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" id="جنسیت2" name="جنسیت" value="جنسیت2" required>
+          <label for="جنسیت2">زن</label>
+        </div>
+
+        <input type="submit" value="ارسال داده">
+      </form>
+    </div>
+  </body>
+</html>
